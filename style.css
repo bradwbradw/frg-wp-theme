@@ -2069,16 +2069,18 @@ a.standard-btn.black-btn {background: #000;}
 		font-size: 36px;
 		font-size: 2.25rem;
 	}
-	h1.site-title,
 	a.home-link,
 	.overlay-btn,
 	#overlay-wrap,
 	.authorbox h3.author-title,
 	#comments h3.comments-title,
 	#comments #respond h3#reply-title {
-		font-size: 26px;
-		font-size: 1.625rem;
+		font-size: 1.425rem;
 		line-height: 1.3;
+	}
+
+	h1.site-title{
+		font-size: 2.2rem;
 	}
 	.entry-summary,
 	.footer-widgets,
@@ -2120,7 +2122,7 @@ a.standard-btn.black-btn {background: #000;}
 
 	/*--- Header ---*/
 	#site-branding {
-		padding: 40px 2.46% 0;
+		padding: 22px 2.46% 0;
 		width: 30%;
 		float: left;
 		z-index: 100000;
@@ -2131,7 +2133,7 @@ a.standard-btn.black-btn {background: #000;}
 		padding-top: 18px;
 	}
 
-	/*--- Site Nav (Desptop Version) ---*/
+	/*--- Site Nav (Desktop Version) ---*/
 	.overlay-btn,
 	.overlay-show #overlay-close {
 		display: none;
@@ -2154,7 +2156,6 @@ a.standard-btn.black-btn {background: #000;}
 	}
 	#site-navigation {
 		float: right;
-		padding: 40px 0 0 0;
 	}
 	#site-navigation ul {
 		margin: 0;
@@ -2424,27 +2425,6 @@ a.standard-btn.black-btn {background: #000;}
 		width: 35%;
 		padding-left: 2.43043%;
 		padding-right: 2.43043%;
-	}
-	h1.site-title {
-		font-size: 90px;
-		font-size: 5.625rem;
-		-webkit-transition: all .4s;
-		-moz-transition: all .4s;
-		-ms-transition: all .4s;
-		-o-transition: all .4s;
-		transition: all .4s;
-	}
-	#masthead h1.site-title {
-		font-size: 26px;
-		font-size: 1.625rem;
-	}
-	.home #site-navigation {
-		opacity: 0;
-		-webkit-transition: all 0.4s;
-		-moz-transition: all 0.4s;
-		-ms-transition: all 0.4s;
-		-o-transition: all 0.4s;
-		transition: all 0.4s;
 	}
 	.home #site-navigation.show {
 		opacity: 1;
