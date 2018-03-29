@@ -2394,9 +2394,6 @@ a.standard-btn.black-btn {background: #000;}
 @media screen and (min-width: 1260px) {
 
 	/*--- General ---*/
-	.home #primary {
-		padding-top: 340px;
-	}
 
 	/*--- Font Styles ---*/
 	.entry-content p.intro,
@@ -2437,7 +2434,7 @@ a.standard-btn.black-btn {background: #000;}
 		-o-transition: all .4s;
 		transition: all .4s;
 	}
-	#masthead.small h1.site-title {
+	#masthead h1.site-title {
 		font-size: 26px;
 		font-size: 1.625rem;
 	}
