@@ -181,7 +181,7 @@ input {
     right: 100%;
     width: 100%;
     height: 3px;
-    background: #0000ff;
+    background: black;
     pointer-events: none;
 }
 
@@ -203,6 +203,11 @@ input {
 
 .main-container {
     opacity: 0;
+}
+
+/* fix: remove "add search bar to header" plugin's redundant li element */
+.astm-search-menu {
+    display: none !important;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -250,11 +255,10 @@ p.author-bio,
 p span.uppercase,
 .entry-content blockquote,
 .searchform {
-    font-family: 'Work Sans', sans-serif;
-}
+    /*
+	font-family: 'Work Sans', sans-serif;
+    */
 
-input[type="submit"] {
-    font-family: 'Amiri', serif;
 }
 
 .entry-content h1,
@@ -291,8 +295,11 @@ p.author-bio,
 #comments textarea,
 .entry-content p.note,
 .searchform {
-    font-size: 15px;
-    font-size: 0.9375rem;
+    font-size: 1.1rem;
+}
+
+.searchform input::placeholder {
+    opacity: 0.2;
 }
 
 .entry-meta,
@@ -990,7 +997,7 @@ a.home-link:before {
 /* --- Main Menu --- */
 #site-navigation {
     display: block;
-    padding: 32px 15px 15px;
+    padding: 28px 15px 15px;
 }
 
 #site-navigation ul {
@@ -1121,8 +1128,8 @@ a.home-link:before {
 #overlay-wrap {
     position: fixed;
     width: 100%;
-    background: #0000ff;
-    color: #fff;
+    background: white;
+    color: black;
     top: 0;
     left: 0;
     right: 0;
@@ -1132,7 +1139,7 @@ a.home-link:before {
 }
 
 #overlay-wrap a {
-    color: #fff;
+    color: black;
 }
 
 .overlay-show #overlay-wrap {
@@ -1621,10 +1628,6 @@ a.home-link:before {
     overflow: hidden;
 }
 
-.search-no-results .searchform {
-    width: 420px;
-}
-
 .error404 .site-content .entry-wrap {
     overflow: hidden;
 }
@@ -1718,11 +1721,13 @@ a.home-link:before {
     background: #fff;
 }
 
-.searchform #s {
+
+.widget_search .searchform #s {
     height: 40px;
     outline: none;
     float: left;
 }
+
 
 .widget_search input[type="submit"] {
     width: 40%;
@@ -1731,6 +1736,10 @@ a.home-link:before {
 
 .footer-widgets .widget_search .searchform #s {
     border: 1px solid #fff;
+}
+
+li#search{
+    list-style-type: none;
 }
 
 /* --- RSS Widget --- */
